@@ -1,0 +1,8 @@
+<div class="container ">
+  <button class="btn btn-primary" (click)="onBtnClick()">Display Details</button>
+  <p [hidden]="!showParagraph">This is tes paragraph</p>
+  <div *ngFor="let click of clicksArray; let i = index">
+    <p [ngStyle]="{color: getColor(i)}" [ngClass]="{arrayelement: clicksArray.indexOf(click) < 1}">{{click}}</p>
+  </div>
+  <success-alert></success-alert>
+</div>

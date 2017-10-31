@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NvD3Module } from 'ng2-nvd3';
+import { NgGridModule } from 'angular2-grid';
 
 import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
@@ -23,7 +24,8 @@ import 'nvd3';
   imports: [
     FormsModule,
     NvD3Module,
-    BrowserModule
+    BrowserModule,
+    NgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
